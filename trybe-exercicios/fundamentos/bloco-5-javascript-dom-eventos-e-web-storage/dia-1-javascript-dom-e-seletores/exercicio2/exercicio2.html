@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 2</title>
+</head>
+
+<body>
+    <style>
+        .boxes {
+            display: inline-block;
+            margin: 30px;
+            padding: 30px;
+            border: 3px solid white;
+            outline: 3px solid black;
+            color: white;
+            background-color: yellow;
+        }
+    </style>
+    <div class="boxes">box 1</div>
+    <div class="boxes">box 2</div>
+    <div class="boxes">box 3</div>
+    <div class="boxes">box 4</div>
+    <script>
+        let changeBackground = document.getElementsByClassName("boxes");
+
+        for (let i = 0; i < changeBackground.length; i += 1) {
+            changeBackground[0].style.backgroundColor = "red";
+            changeBackground[1].style.backgroundColor = "green";
+            changeBackground[2].style.backgroundColor = "blue";
+            changeBackground[3].style.backgroundColor = "black";
+        }
+    </script>
+</body>
+
+</html>

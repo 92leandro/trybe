@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Currículo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header id="head">
+    <h1 id="title">Cadastro de Currículo</h1>
+  </header>
+  <main id="main">
+    <form action="" method="get">
+      <fieldset id="container1">
+        <div>
+          <label for="nome">Nome completo:</label>
+          <input type="text" name="curriculo" id="nome" maxlength="40" required>
+          <label for="email">E-mail:</label>
+          <input type="email" name="curriculo" id="email" maxlength="50" required>
+          <label for="cpf">CPF:</label>
+          <input type="text" name="curriculo" id="cpf" maxlength="11" required>
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="curriculo" id="endereco" maxlength="200" required>
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="curriculo" id="cidade" maxlength="28" required>
+        </div>
+        <div>
+          <label for="estado">Estado:</label>
+          <select name="curriculo" id="estado" required></select>
+          <input type="radio" name="curriculo" required>Casa
+          <input type="radio" name="curriculo" required>Apartamento
+        </div>
+      </fieldset>
+      <h2>Dados do ultimo emprego</h2>
+      <fieldset id="container2">
+        <div>
+          <label for="resumo-curriculo">Resumo do seu ultimo emprego:</label>
+          <input type="text" name="ultimo-emprego" id="resumo-curriculo" maxlength="1000" required>
+          <label for="cargo">Cargo:</label>
+          <input type="text" name="ultimo-emprego" id="cargo" maxlength="40" required>
+          <label for="descricao-cargo">Descrição do cargo:</label>
+          <input type="text" name="ultimo-emprego" id="descricao-cargo" maxlength="500" required>
+        </div>
+        <div id="data">
+          <label for="dia">Dia:</label>
+          <input type="text" name="ultimo-emprego" id="dia" maxlength="2" required>
+          <label for="mes">Mês:</label>
+          <input type="text" name="ultimo-emprego" id="mes" maxlength="2" required>
+          <label for="ano">Ano:</label>
+          <input type="text" name="ultimo-emprego" id="ano" maxlength="4" required>
+        </div>
+      </fieldset>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar campos</button>
+    </form>
+  </main>
+</body>
+
+</html>
